@@ -2,7 +2,6 @@ import Github from '@/components/Github';
 import './globals.css'
 import { Montserrat } from 'next/font/google'
 import { BiMenuAltRight } from "react-icons/bi";
-import { SiNextdotjs } from 'react-icons/si';
 const montserrat = Montserrat({ subsets: ['latin'] })
 
 export const metadata = {

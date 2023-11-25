@@ -67,7 +67,7 @@ const Blog = async () => {
 
     return (
         <div className="flex flex-col w-full h-screen px-5 md:px-0 items-center pt-32">
-            <div className="text-3xl font-black text-white text-center md:text-left">Meric&apos;s Blog - Tips & How-to&apos;s for Frontend Developer</div>
+            <div className="text-3xl font-black text-white text-center md:text-left">Meric&apos;s Blog - Tips & How-to&apos;s for Frontend Developers</div>
             <p className="text-white/50 text-center md:w-[30rem]">Hey coders, welcome to my blog. Where I share useful tricks & tutorials about frontend development.</p>
             <div className="md:w-[65rem] grid grid-cols-1 md:grid-cols-2 mt-5 gap-5 pb-5">
                 {
