@@ -10,6 +10,7 @@ import { useEffect, useState } from "react";
 import { BiLogoLinkedinSquare, BiLogoDiscordAlt, BiLogoGithub } from "react-icons/bi";
 import { BsMouse } from "react-icons/bs";
 import { MdTouchApp } from "react-icons/md";
+import { SiNextdotjs } from "react-icons/si";
 
 const Home = () => {
     const [blurPos, setBlurPos] = useState({ x: 0, y: 0 })
@@ -98,7 +99,10 @@ const Home = () => {
                         </a>
                     </m.div>
                 </m.div>
-
+                <Link href="/blog" className="text-white/70 underline z-[9999]">Check out my blog!</Link>
+                <div className="absolute bottom-5 w-full flex justify-center z-[9999]">
+                    <p className="text-white/50 text-sm flex items-center gap-1">Made with <span className="heartbeat">❤️</span> by Meriç Akbaş using <a href="https://nextjs.org"><SiNextdotjs /></a></p>
+                </div>
                 <m.div {...FadeInBottom} transition={{ ...FadeInBottom.transition, delay: 2.5 }} className="flex flex-col items-center  relative top-20 gap-5">
                     <BsMouse size="2rem" className="fill-white/50 hidden md:block" />
                     <MdTouchApp size="2rem" className="fill-white/50 md:hidden" />
