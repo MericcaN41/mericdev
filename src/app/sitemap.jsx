@@ -14,20 +14,20 @@ export default async function sitemap() {
 
     return [
         {
-            url: "/",
+            url: "https://meric.dev/",
         },
         {
-            url: "/blog",
+            url: "https://meric.dev/blog",
         },
         {
-            url: "/about",
+            url: "https://meric.dev/about",
         },
         {
-            url: "/contact",
+            url: "https://meric.dev/contact",
         },
         ...paths.map((path) => {
             return {
-                url: `/blog/${path.slug}`,
+                url: `https://meric.dev/blog/${path.slug}`,
                 lastModified: new Date(path.updatedAt),
             }
         })
