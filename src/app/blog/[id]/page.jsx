@@ -12,6 +12,7 @@ const Highlighter = dynamic(() => import("@/components/Highlighter"), { ssr: fal
 export async function generateStaticParams() {
     const entries = await client.getEntries({
         content_type: "blogPost",
+
     })
 
     return entries.items.map((p) => ({
@@ -19,8 +20,8 @@ export async function generateStaticParams() {
     }))
 }
 
-export async function generateMetadata(params) {
-    const postData = await getPost(params.id)
+export async function generateMetadata({params}) {
+	const postData = await getPost(params.id)
     const { title, thumbnail, entry, mainCategory } = postData.fields;
     const { createdAt } = postData.sys;
     const { tags } = postData.metadata;
